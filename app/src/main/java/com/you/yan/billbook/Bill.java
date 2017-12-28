@@ -18,6 +18,7 @@ public class Bill {
 
     String typeName;
     String typeIcon;
+    boolean in; //收入或支出
     double money;
     String comment;
     Date date;
@@ -44,6 +45,14 @@ public class Bill {
 
     public void setTypeIcon(String typeIcon) {
         this.typeIcon = typeIcon;
+    }
+
+    public boolean isIn() {
+        return in;
+    }
+
+    public void setIn(boolean in) {
+        this.in = in;
     }
 
     public double getMoney() {
