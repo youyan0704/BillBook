@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-import com.myhome.android.myhome.R;
+import com.you.yan.billbook.R;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -39,7 +39,7 @@ public class KeyboardUtil {
         this.mActivity = activity;
         this.mIfRandom = ifRandom;
         mKeyboardNumber = new Keyboard(mActivity, R.xml.keyboardnumber);
-        mKeyboardView = (NumberKeyboardView) mActivity.findViewById(R.id.keyboard_view);
+//        mKeyboardView = (NumberKeyboardView) mActivity.findViewById(R.id.keyboard_view);
     }
 
     /**
@@ -58,7 +58,7 @@ public class KeyboardUtil {
             mKeyboardNumber = new Keyboard(mActivity, R.xml.keyboardnumber);
         }
         if (mKeyboardView == null) {
-            mKeyboardView = (NumberKeyboardView) mActivity.findViewById(R.id.keyboard_view);
+//            mKeyboardView = (NumberKeyboardView) mActivity.findViewById(R.id.keyboard_view);
         }
         if (mIfRandom) {
             randomKeyboardNumber();

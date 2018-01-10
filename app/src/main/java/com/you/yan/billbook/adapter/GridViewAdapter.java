@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.myhome.android.myhome.R;
+import com.you.yan.billbook.R;
 
 import java.util.List;
 
@@ -59,10 +59,10 @@ public class GridViewAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder = null;
         if (convertView == null) {
-            convertView = inflater.inflate(R.layout.item_gridview, parent, false);
+            /*convertView = inflater.inflate(R.layout.item_gridview, parent, false);
             viewHolder = new ViewHolder();
             viewHolder.tv = (TextView) convertView.findViewById(R.id.textView);
-            viewHolder.iv = (ImageView) convertView.findViewById(R.id.imageView);
+            viewHolder.iv = (ImageView) convertView.findViewById(R.id.imageView);*/
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
